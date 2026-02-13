@@ -93,7 +93,7 @@ const movie = {
   },
 };
 
-const questionCheck = confirm("Хочете перевірити, чи рейтинг більше 8?");
+const questionCheck = confirm("Хочете дізнатися чи рейтинг більше 8?");
 if (questionCheck) {
   if (movie.ratingBig()) {
     alert("True, рейтинг > 8");
