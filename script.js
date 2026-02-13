@@ -56,3 +56,50 @@ if (weather.gradCelcius(usetemp)) {
 } else {
   console.log("Температура вище 0");
 }
+
+// Створіть об’єкт "user", який буде мати властивості "name", "email", "password". Додайте метод "login", який буде перевіряти правильність введеного email та password.
+
+const user = {
+  name: "python",
+  password: "1234",
+  email: "1234",
+
+  login(inputemail, inputpassword) {
+    if (inputemail === this.email && inputpassword === this.password) {
+      console.log("ласкаво просимо");
+      return true;
+    } else {
+      console.log("нет");
+    }
+  },
+};
+const login = prompt("логін");
+const password = prompt("пароль");
+user.login(login, password);
+
+// Створіть об'єкт "movie" з властивостями "title", "director", "year", "rating". Додайте до об'єкту метод, який повертає "true", якщо рейтинг фільму вище 8, та "false", якщо рейтинг фільму 8 або нижче. Вивести значення властивостей в консоль.
+
+const movie = {
+  title: "Spider-Man:No Way Home",
+  director: "Jon Watts",
+  year: "2021",
+  rating: "8.1",
+  ratingBig() {
+    if (movie.rating > 8) {
+      return true;
+    } else {
+      return false;
+    }
+  },
+};
+
+const questionCheck = confirm("Хочете перевірити, чи рейтинг більше 8?");
+if (questionCheck) {
+  if (movie.ratingBig()) {
+    alert("True, рейтинг > 8");
+  } else {
+    alert("False, рейтинг < 8");
+  }
+}
+
+console.log(`Ваш фільм ${movie.title}, його рейтинг складає ${movie.rating}`);
