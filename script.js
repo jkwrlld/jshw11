@@ -82,8 +82,8 @@ user.login(login, password);
 const movie = {
   title: "Spider-Man:No Way Home",
   director: "Jon Watts",
-  year: "2021",
-  rating: "8.1",
+  year: 2021,
+  rating: 8.1,
   ratingBig() {
     if (movie.rating > 8) {
       return true;
