@@ -103,3 +103,4 @@ if (questionCheck) {
 }
 
 console.log(`Ваш фільм ${movie.title}, його рейтинг складає ${movie.rating}`);
+console.log(questionCheck);
